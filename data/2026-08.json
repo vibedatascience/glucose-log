@@ -1,1 +1,10 @@
-{}
+{
+  "2026-08-14": {
+    "Breakfast": {
+      "eatTime": "08:30",
+      "reading": "118",
+      "readTime": "09:30",
+      "food": "TEST ENTRY delete me"
+    }
+  }
+}
