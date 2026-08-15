@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pavi's Readings</title>
+<style>
+  :root { --ink:#1c1917; --faint:#a8a29e; --line:#e7e5e4; --red:#E60023; --good:#166534; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#fafaf9; color:var(--ink);
+         font-family:Georgia,'Times New Roman',serif; }
+  .wrap { max-width:640px; margin:0 auto; padding:40px 20px 60px; }
+  header { border-bottom:3px double var(--ink); padding-bottom:14px; margin-bottom:6px; }
+  h1 { font-size:26px; font-weight:400; margin:0; letter-spacing:0.5px; }
+  .meta { font-family:system-ui,sans-serif; font-size:12px; color:var(--faint);
+          text-transform:uppercase; letter-spacing:1.5px; margin-top:6px; }
+  .streak { font-family:system-ui,sans-serif; font-size:13px; color:var(--good);
+            margin:14px 0 26px; }
+  .day { margin-bottom:30px; }
+  .daylabel { font-family:system-ui,sans-serif; font-size:12px; letter-spacing:1.5px;
+              text-transform:uppercase; color:var(--faint); margin-bottom:8px; }
+  table { width:100%; border-collapse:collapse; }
+  td { padding:10px 4px; border-bottom:1px solid var(--line); vertical-align:baseline; }
+  .meal { font-family:system-ui,sans-serif; font-size:13px; width:90px; color:var(--ink); }
+  .num { font-size:30px; width:80px; font-variant-numeric:tabular-nums; }
+  .num.over { color:var(--red); }
+  .unit { font-family:system-ui,sans-serif; font-size:11px; color:var(--faint); }
+  .when { font-family:system-ui,sans-serif; font-size:12px; color:var(--faint); width:70px; }
+  .food { font-style:italic; font-size:14px; color:#57534e; line-height:1.45; }
+  .pending { color:var(--faint); font-size:16px; font-style:italic; }
+  footer { font-family:system-ui,sans-serif; font-size:11px; color:var(--faint);
+           border-top:1px solid var(--line); padding-top:12px; margin-top:10px; }
+  #err { font-family:system-ui,sans-serif; color:var(--red); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Pavi&rsquo;s Readings</h1>
+    <div class="meta">Fasting under 95 &middot; One hour after meals under 140 &middot; mg/dL</div>
+  </header>
+  <div class="streak" id="streak"></div>
+  <div id="days"><span id="err"></span></div>
+  <footer>Data: vibedatascience/glucose-log &middot; updates on refresh</footer>
+</div>
+
+<script>
+const REPO = "vibedatascience/glucose-log";
+const ORDER = ["Fasting","Breakfast","Lunch","Dinner"];
+const TARGET = {Fasting:95, Breakfast:140, Lunch:140, Dinner:140};
+const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function fmtDay(d){
+  const [y,m,dd] = d.split("-").map(Number);
+  const dt = new Date(y, m-1, dd);
+  const wd = dt.toLocaleDateString("en-US",{weekday:"long"});
+  return wd + ", " + MONTHS[m-1] + " " + dd;
+}
+function fmtTime(t){
+  if(!t) return "";
+  let [h,m] = t.split(":").map(Number);
+  const ap = h >= 12 ? "PM" : "AM";
+  h = h % 12 || 12;
+  return h + ":" + String(m).padStart(2,"0") + " " + ap;
+}
+
+async function main(){
+  let data = {};
+  try{
+    const months = new Set();
+    const now = new Date();
+    for(let i=0;i<2;i++){
+      const d = new Date(now.getFullYear(), now.getMonth()-i, 1);
+      months.add(d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0"));
+    }
+    for(const m of months){
+      const r = await fetch("https://raw.githubusercontent.com/"+REPO+"/main/data/"+m+".json?cb="+Date.now());
+      if(r.ok) Object.assign(data, await r.json());
+    }
+  }catch(e){
+    document.getElementById("err").textContent = "Could not load data: "+e.message;
+    return;
+  }
+
+  const days = Object.keys(data).sort().reverse();
+  let inRange = 0, total = 0, html = "";
+
+  for(const d of days){
+    let rows = "";
+    for(const meal of ORDER){
+      const e = data[d][meal];
+      if(!e) continue;
+      const r = parseInt(e.reading);
+      const has = !isNaN(r);
+      if(has){ total++; if(r < TARGET[meal]) inRange++; }
+      rows += "<tr>"
+        + '<td class="meal">'+meal+'</td>'
+        + '<td class="num'+(has && r>=TARGET[meal] ? ' over':'')+'">'
+          + (has ? r+' <span class="unit">/'+TARGET[meal]+'</span>' : '<span class="pending">&mdash;</span>')
+        + '</td>'
+        + '<td class="when">'+fmtTime(e.readTime)+'</td>'
+        + '<td class="food">'+(e.food||"")+'</td>'
+        + "</tr>";
+    }
+    if(rows) html += '<div class="day"><div class="daylabel">'+fmtDay(d)+'</div><table>'+rows+'</table></div>';
+  }
+
+  document.getElementById("days").innerHTML = html || "No entries yet.";
+  document.getElementById("streak").textContent =
+    total ? inRange+" of "+total+" readings in range" : "";
+}
+main();
+</script>
+</body>
+</html>
