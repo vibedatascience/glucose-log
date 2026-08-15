@@ -1,1 +1,22 @@
-{}
+{
+  "2026-08-14": {
+    "Dinner": {
+      "eatTime": "20:45",
+      "reading": "85",
+      "readTime": "21:46",
+      "food": "bell pepper stir fry (onion, tomato), keema, 1 roti"
+    }
+  },
+  "2026-08-15": {
+    "Fasting": {
+      "reading": "85",
+      "readTime": "10:15"
+    },
+    "Breakfast": {
+      "eatTime": "10:27",
+      "reading": "",
+      "readTime": "",
+      "food": "whole wheat toast with peanut butter and banana, plain omelette with cottage cheese"
+    }
+  }
+}
