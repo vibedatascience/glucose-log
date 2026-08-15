@@ -17,6 +17,12 @@
       "reading": "113",
       "readTime": "11:34",
       "food": "whole wheat toast with peanut butter and banana, plain omelette with cottage cheese, coffee with some milk"
+    },
+    "Lunch": {
+      "eatTime": "14:10",
+      "reading": "",
+      "readTime": "",
+      "food": "brick-oven half chicken, roasted potatoes, zucchini (Osteria Brooklyn LIC)"
     }
   }
 }
