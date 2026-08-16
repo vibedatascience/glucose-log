@@ -41,6 +41,13 @@
       "reading": "108",
       "readTime": "12:01",
       "food": "besan chilla with spinach and veggies"
+    },
+    "Lunch": {
+      "eatTime": "12:30",
+      "reading": "104",
+      "readTime": "14:30",
+      "food": "poached eggs well done, harissa & yogurt (Radio Star)",
+      "note": "reading at 2hr not 1hr"
     }
   }
 }
