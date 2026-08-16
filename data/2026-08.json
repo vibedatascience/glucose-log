@@ -35,6 +35,12 @@
     "Fasting": {
       "reading": "87",
       "readTime": "10:00"
+    },
+    "Breakfast": {
+      "eatTime": "11:00",
+      "reading": "",
+      "readTime": "",
+      "food": "besan chilla with spinach and veggies"
     }
   }
 }
