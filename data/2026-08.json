@@ -38,8 +38,8 @@
     },
     "Breakfast": {
       "eatTime": "11:00",
-      "reading": "",
-      "readTime": "",
+      "reading": "108",
+      "readTime": "12:01",
       "food": "besan chilla with spinach and veggies"
     }
   }
