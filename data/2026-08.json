@@ -23,6 +23,12 @@
       "reading": "83",
       "readTime": "15:19",
       "food": "brick-oven half chicken, roasted potatoes, zucchini (Osteria Brooklyn LIC)"
+    },
+    "Dinner": {
+      "eatTime": "21:10",
+      "reading": "",
+      "readTime": "",
+      "food": "cup of quinoa, 1 chicken leg, bell pepper stir fry (leftover)"
     }
   }
 }
