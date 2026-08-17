@@ -51,8 +51,8 @@
     },
     "Dinner": {
       "eatTime": "21:00",
-      "reading": "",
-      "readTime": "",
+      "reading": "102",
+      "readTime": "22:03",
       "food": "1 roti, chicken leg curry (homemade), bell pepper stir fry, mango thalassery (cooked mango curry)"
     }
   }
