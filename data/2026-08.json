@@ -60,6 +60,12 @@
     "Fasting": {
       "reading": "80",
       "readTime": "10:27"
+    },
+    "Breakfast": {
+      "eatTime": "10:50",
+      "reading": "",
+      "readTime": "",
+      "food": "2-egg plain omelette, cottage cheese, 2 mini chicken sausages, 1 peanut butter toast, 1/2 banana"
     }
   }
 }
