@@ -48,6 +48,12 @@
       "readTime": "14:30",
       "food": "poached eggs well done, harissa & yogurt (Radio Star)",
       "note": "reading at 2hr not 1hr"
+    },
+    "Dinner": {
+      "eatTime": "21:00",
+      "reading": "",
+      "readTime": "",
+      "food": "1 roti, chicken leg curry (homemade), bell pepper stir fry, mango (lassi?)"
     }
   }
 }
