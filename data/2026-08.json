@@ -79,5 +79,11 @@
       "readTime": "22:20",
       "food": "roti, capsicum, keema"
     }
+  },
+  "2026-08-18": {
+    "Fasting": {
+      "reading": "83",
+      "readTime": "06:08"
+    }
   }
 }
