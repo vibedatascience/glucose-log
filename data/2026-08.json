@@ -90,6 +90,13 @@
       "reading": "104",
       "readTime": "10:30",
       "food": "beef gyro, no pita (Halal Guys, airport)"
+    },
+    "Lunch": {
+      "eatTime": "14:30",
+      "reading": "117",
+      "readTime": "15:30",
+      "food": "grouper al ajillo w/ side + salad (Stop & Go, San Juan)",
+      "note": "Puerto Rico time (AST)"
     }
   }
 }
