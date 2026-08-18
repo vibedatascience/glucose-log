@@ -72,6 +72,12 @@
       "reading": "93",
       "readTime": "15:55",
       "food": "cup of quinoa, spinach stir fry, fish, cabbage, chicken sausages"
+    },
+    "Dinner": {
+      "eatTime": "21:20",
+      "reading": "86",
+      "readTime": "22:20",
+      "food": "roti, capsicum, keema"
     }
   }
 }
