@@ -84,6 +84,12 @@
     "Fasting": {
       "reading": "83",
       "readTime": "06:08"
+    },
+    "Breakfast": {
+      "eatTime": "09:30",
+      "reading": "104",
+      "readTime": "10:30",
+      "food": "beef gyro, no pita (Halal Guys, airport)"
     }
   }
 }
