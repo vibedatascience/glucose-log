@@ -97,6 +97,13 @@
       "readTime": "15:30",
       "food": "grouper al ajillo, rice & red beans, green salad (Stop & Go, San Juan)",
       "note": "Puerto Rico time (AST)"
+    },
+    "Dinner": {
+      "eatTime": "~21:30",
+      "reading": "98",
+      "readTime": "22:30",
+      "food": "bistec encebollado (Kikuet, San Juan)",
+      "note": "times approx, EST ~ AST"
     }
   }
 }
