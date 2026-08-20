@@ -141,6 +141,12 @@
       "reading": "111",
       "readTime": "11:00",
       "food": "veggie omelette, 2 chicken sausages, yogurt with granola and fruits, coffee with milk"
+    },
+    "Lunch": {
+      "eatTime": "14:54",
+      "reading": "105",
+      "readTime": "15:54",
+      "food": "roast chicken, 1/4 beef stew, 1 cup salad, 3/4 cup rice & beans"
     }
   }
 }
