@@ -105,5 +105,42 @@
       "food": "bistec encebollado (Kikuet, San Juan)",
       "note": "times approx, EST ~ AST"
     }
+  },
+  "2026-08-19": {
+    "Fasting": {
+      "reading": "78",
+      "readTime": "09:00"
+    },
+    "Breakfast": {
+      "eatTime": "09:00",
+      "reading": "87",
+      "readTime": "11:00",
+      "food": "scrambled eggs, 2 sausages, 1 bacon, 2 potatoes, half mini guava danish, coffee, fruits",
+      "note": "reading at 2hr"
+    },
+    "Lunch": {
+      "eatTime": "12:45",
+      "reading": "84",
+      "readTime": "13:45",
+      "food": "grouper fillet with shrimp (Grouper Isleno), 2 tsp rice & beans"
+    },
+    "Dinner": {
+      "eatTime": "20:30",
+      "reading": "99",
+      "readTime": "21:35",
+      "food": "2 chicken croquetas, octopus salad, etc."
+    }
+  },
+  "2026-08-20": {
+    "Fasting": {
+      "reading": "72",
+      "readTime": "09:20"
+    },
+    "Breakfast": {
+      "eatTime": "10:00",
+      "reading": "111",
+      "readTime": "11:00",
+      "food": "veggie omelette, 2 chicken sausages, yogurt with granola and fruits, coffee with milk"
+    }
   }
 }
