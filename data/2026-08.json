@@ -147,6 +147,12 @@
       "reading": "105",
       "readTime": "15:54",
       "food": "roast chicken, 1/4 beef stew, 1 cup salad, 3/4 cup rice & beans"
+    },
+    "Dinner": {
+      "eatTime": "21:20",
+      "reading": "99",
+      "readTime": "22:21",
+      "food": "shrimp in garlic sauce, rice & beans, steamed carrot & cauliflower"
     }
   }
 }
