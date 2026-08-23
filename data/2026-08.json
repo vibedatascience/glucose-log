@@ -218,6 +218,12 @@
       "readTime": "12:40",
       "food": "coffee with milk",
       "note": "sipped coffee slowly until the test \u2014 milk carbs still absorbing at prick time"
+    },
+    "Lunch": {
+      "eatTime": "14:00",
+      "reading": "95",
+      "readTime": "15:00",
+      "food": "veg jalfrezi, brown rice, chicken curry"
     }
   }
 }
