@@ -154,5 +154,70 @@
       "readTime": "22:21",
       "food": "shrimp in garlic sauce, rice & beans, steamed carrot & cauliflower"
     }
+  },
+  "2026-08-21": {
+    "Fasting": {
+      "reading": "65",
+      "readTime": "09:40"
+    },
+    "Breakfast": {
+      "eatTime": "10:05",
+      "reading": "124",
+      "readTime": "11:05",
+      "food": "scrambled eggs, toast w/ peanut butter, papaya",
+      "note": "45-min breakfast"
+    },
+    "Lunch": {
+      "eatTime": "13:00",
+      "reading": "101",
+      "readTime": "14:00",
+      "food": "baked oysters, mahi mahi stew, crackers"
+    },
+    "Dinner": {
+      "eatTime": "21:15",
+      "reading": "110",
+      "readTime": "22:15",
+      "food": "fish in rice with vegetables",
+      "note": "no walk; did 30-min swim earlier in day"
+    }
+  },
+  "2026-08-22": {
+    "Fasting": {
+      "reading": "76",
+      "readTime": "10:00"
+    },
+    "Breakfast": {
+      "eatTime": "10:30",
+      "reading": "119",
+      "readTime": "11:30",
+      "food": "veggie omelette, bread and jam, papaya, yogurt, bacon"
+    },
+    "Lunch": {
+      "eatTime": "16:00",
+      "reading": "125",
+      "readTime": "17:00",
+      "food": "lunch + a couple gulps Gatorade ~30 min before reading",
+      "note": "Gatorade shortly before prick likely inflated this"
+    },
+    "Dinner": {
+      "eatTime": "20:10",
+      "reading": "126",
+      "readTime": "21:10",
+      "food": "fried chicken with a little bread",
+      "note": "travel day"
+    }
+  },
+  "2026-08-23": {
+    "Fasting": {
+      "reading": "81",
+      "readTime": "11:30"
+    },
+    "Breakfast": {
+      "eatTime": "11:40",
+      "reading": "131",
+      "readTime": "12:40",
+      "food": "coffee with milk",
+      "note": "sipped coffee slowly until the test \u2014 milk carbs still absorbing at prick time"
+    }
   }
 }
