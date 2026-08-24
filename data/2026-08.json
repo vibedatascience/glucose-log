@@ -224,6 +224,12 @@
       "reading": "95",
       "readTime": "15:00",
       "food": "veg jalfrezi, brown rice, chicken curry"
+    },
+    "Dinner": {
+      "eatTime": "20:50",
+      "reading": "",
+      "readTime": "",
+      "food": "dal, little chicken curry, veg jalfrezi, 2 rotis"
     }
   }
 }
