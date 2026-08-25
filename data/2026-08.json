@@ -231,5 +231,29 @@
       "readTime": "21:54",
       "food": "dal, little chicken curry, veg jalfrezi, 2 rotis"
     }
+  },
+  "2026-08-24": {
+    "Fasting": {
+      "reading": "83",
+      "readTime": "10:00"
+    },
+    "Breakfast": {
+      "eatTime": "10:30",
+      "reading": "94",
+      "readTime": "11:30",
+      "food": "omelette and a Tamilian item"
+    },
+    "Lunch": {
+      "eatTime": "13:00",
+      "reading": "115",
+      "readTime": "14:00",
+      "food": "Chipotle: brown rice, black beans, barbacoa, veg, sauces"
+    },
+    "Dinner": {
+      "eatTime": "20:50",
+      "reading": "116",
+      "readTime": "21:50",
+      "food": "\u00bd cup quinoa, beef & green bean stir fry in Chinese sauce"
+    }
   }
 }
