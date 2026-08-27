@@ -255,5 +255,63 @@
       "readTime": "21:50",
       "food": "\u00bd cup quinoa, beef & green bean stir fry in Chinese sauce"
     }
+  },
+  "2026-08-25": {
+    "Fasting": {
+      "reading": "84",
+      "readTime": "10:00"
+    },
+    "Breakfast": {
+      "eatTime": "11:20",
+      "reading": "117",
+      "readTime": "12:20",
+      "food": "egg scramble, sausage, whole wheat toast, honey iced latte"
+    },
+    "Lunch": {
+      "eatTime": "12:55",
+      "reading": "90",
+      "readTime": "13:55",
+      "food": "brown rice, chicken stir fry (approx)"
+    },
+    "Dinner": {
+      "eatTime": "21:00",
+      "reading": "117",
+      "readTime": "22:00",
+      "food": "brown rice, half roti, potato, chicken, egg",
+      "note": "30-min leg workout that day"
+    }
+  },
+  "2026-08-26": {
+    "Fasting": {
+      "reading": "81",
+      "readTime": "10:30"
+    },
+    "Breakfast": {
+      "eatTime": "11:50",
+      "reading": "111",
+      "readTime": "12:50",
+      "food": "whole wheat toast, egg scramble, sausage, honey iced latte"
+    },
+    "Lunch": {
+      "eatTime": "15:00",
+      "reading": "107",
+      "readTime": "16:00",
+      "food": "roti, little rice, potatoes, egg, chicken"
+    },
+    "Dinner": {
+      "eatTime": "21:00",
+      "reading": "113",
+      "readTime": "22:00",
+      "food": "hot pot"
+    }
+  },
+  "2026-08-27": {
+    "Breakfast": {
+      "eatTime": "11:30",
+      "reading": "155",
+      "readTime": "12:30",
+      "food": "veggie/spinach wrap (flour tortilla) with egg scramble, bell pepper & veggies",
+      "note": "OUT OF RANGE - spinach wrap had flour; fasting not taken"
+    }
   }
 }
